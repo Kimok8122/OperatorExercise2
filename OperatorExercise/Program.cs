@@ -25,13 +25,20 @@ namespace OperatorExercise
             Console.WriteLine($"{a}*{b} is {times}");
             Console.WriteLine($"{a}/{b} is {div} remainder being {mod}");
 
+            var i = 3;
+            var j = 4;
+            var k = ++i * j++;
+            Console.WriteLine(k);
+
+
+            Console.WriteLine($"Enter a number radius:");
             var radius = double.Parse(Console.ReadLine());
 
             var r = 20;
             var pi = Math.PI;
 
             var areaOfCircle = pi * (r * r);
-            var areaOfCircleInput = radius;
+            var areaOfCircleInput = pi * (radius * radius);
 
             Console.WriteLine($"The area of a circle with radius of {r} is {areaOfCircle}");
             Console.WriteLine($"However, the area of a circle with radius of {radius} is {areaOfCircleInput}");
