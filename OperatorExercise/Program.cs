@@ -38,7 +38,7 @@ namespace OperatorExercise
             var pi = Math.PI;
 
             var areaOfCircle = pi * (r ^ 2);
-            var areaOfCircleInput = pi * (radius * 2);
+            var areaOfCircleInput = pi * (radius * radius);
 
             Console.WriteLine($"The area of a circle with radius of {r} is {areaOfCircle}");
             Console.WriteLine($"However, the area of a circle with radius of {radius} is {areaOfCircleInput}");
